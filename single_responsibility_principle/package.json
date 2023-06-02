@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -r ts-node/register ./tests/**/*.{test,spec}.[t,j]s",
-    "lint": "eslint  -c .eslintrc.json src/**/*.[t,j]s"
+    "lint": "eslint  -c .eslintrc.json src/**/*.[t,j]s",
+    "start": "npx ts-node src"
   },
   "devDependencies": {
     "typescript": "4.4.2",
