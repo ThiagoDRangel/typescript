@@ -3,8 +3,8 @@ import FooCepAPI from './FooCepAPI';
 class CepService {
   private readonly cepApi: FooCepAPI;
 
-  constructor() {
-    this.cepApi = new FooCepAPI();
+  constructor(cepApi: FooCepAPI) {
+    this.cepApi = cepApi;
   }
 
   addressByCep(cep: string, num: number) {
